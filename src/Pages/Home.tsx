@@ -29,6 +29,7 @@ export const Home = () => {
 
   return (
     <HomeContainer>
+      { emojis && emojis.length <= 0 && <h1>Emoji Search</h1> }
       <StyledForm onSubmit={ handleSubmit }>
         <input type="text" ref={ emojiInputRef } />
         <button>Search</button>
